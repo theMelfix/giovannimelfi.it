@@ -1,1 +1,5 @@
 .idea
+.env
+.user.ini
+.DS_Store
+Thumbs.db

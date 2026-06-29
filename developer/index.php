@@ -104,7 +104,7 @@ $email_display = '<a href="mailto:' . $email . '">' . $email . '</a>';
       Ingegnere Informatico con background in sistemi bancari internazionali. Oggi porto lo stesso rigore tecnico come freelance — backend solidi, API pulite, infrastruttura che regge.
     </p>
     <div class="hero-cta">
-      <a href="/old-cv-giovanni-melfi.pdf" download class="btn-primary" style="gap:8px;">
+      <a href="/cv-giovanni-melfi.pdf" download class="btn-primary" style="gap:8px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Scarica CV
       </a>
