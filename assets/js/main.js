@@ -66,14 +66,32 @@ function toggleFaq(btn) {
   }
 }
 
-// Cookie banner
+// Cookie banner + Google Consent Mode
 const banner = document.getElementById('cookie-banner');
-if (!localStorage.getItem('cookie-accepted')) {
-  setTimeout(() => { banner.style.transform = 'translateY(0)'; }, 800);
+function showBanner() { banner.style.transform = 'translateY(0)'; }
+function hideBanner() { banner.style.transform = 'translateY(100%)'; }
+
+// Mostra il banner solo se l'utente non ha ancora scelto
+if (!localStorage.getItem('cookie-consent')) {
+  setTimeout(showBanner, 800);
 }
-function acceptCookies() {
-  localStorage.setItem('cookie-accepted', '1');
-  banner.style.transform = 'translateY(100%)';
+
+function updateConsent(state) {
+  // state: 'granted' | 'denied'
+  localStorage.setItem('cookie-consent', state);
+  if (typeof gtag === 'function') {
+    gtag('consent', 'update', { analytics_storage: state });
+  }
+  hideBanner();
+}
+function acceptCookies() { updateConsent('granted'); }
+function rejectCookies() { updateConsent('denied'); }
+
+// Riapre il banner per modificare/revocare il consenso
+function manageCookies(e) {
+  if (e) e.preventDefault();
+  if (typeof closePrivacy === 'function') closePrivacy();
+  showBanner();
 }
 
 // Privacy modal

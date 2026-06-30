@@ -1,4 +1,5 @@
 <?php
+require dirname(__DIR__) . '/includes/config.php';
 $page_type = 'developer';
 $email = 'info@giovannimelfi.it';
 $email_display = '<a href="mailto:' . $email . '">' . $email . '</a>';
@@ -8,6 +9,7 @@ $email_display = '<a href="mailto:' . $email . '">' . $email . '</a>';
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include dirname(__DIR__) . '/includes/google-head.php'; ?>
 
 <!-- PRIMARY SEO -->
 <title>Giovanni Melfi — Software Engineer | PHP, Java, Docker, DevOps</title>

@@ -19,6 +19,11 @@ php -S 127.0.0.1:8000
 
 Vedi **[DEPLOY.md](DEPLOY.md)** (VPS con CloudPanel: nginx + PHP-FPM, deploy via git, HTTPS Let's Encrypt).
 
+## Google (indicizzazione, analytics, scheda locale)
+
+Vedi **[GOOGLE.md](GOOGLE.md)**. Gli ID dei servizi si impostano in `includes/config.php`.
+GA4 è già predisposto con Consent Mode v2 e banner Accetto/Rifiuta: basta inserire il Measurement ID.
+
 ## Asset social
 
 `og-image.png` (anteprima social) si rigenera con:

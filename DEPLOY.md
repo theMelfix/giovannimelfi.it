@@ -82,17 +82,18 @@ curl     https://giovannimelfi.it/robots.txt        # sitemap presente
 curl     https://giovannimelfi.it/sitemap.xml       # XML valido
 ```
 
-## 6. Indicizzazione / "ricercabile online"
+## 6. Google: indicizzazione, analytics, scheda locale
 
-1. [Google Search Console](https://search.google.com/search-console) → aggiungi la
-   proprietà `giovannimelfi.it` (verifica via record DNS TXT — comodo perché il DNS
-   è già tuo).
-2. **Sitemaps** → invia `https://giovannimelfi.it/sitemap.xml`.
-3. Usa **Controllo URL → Richiedi indicizzazione** per `/` e `/developer`.
-4. Verifica l'anteprima social con
-   [opengraph.xyz](https://www.opengraph.xyz/) o il validator di LinkedIn
+La configurazione completa di **Search Console**, **Google Analytics 4** e
+**Profilo dell'attività** è in **[GOOGLE.md](GOOGLE.md)**. In sintesi:
+
+1. Search Console → verifica via DNS TXT → invia `sitemap.xml` → richiedi
+   indicizzazione di `/` e `/developer`.
+2. GA4 → crea la proprietà, copia il Measurement ID in `includes/config.php`
+   (`$GA4_ID`) → deploy. Consent Mode v2 e banner Accetto/Rifiuta sono già pronti.
+3. Verifica l'anteprima social con [opengraph.xyz](https://www.opengraph.xyz/)
    (l'immagine è `og-image.png`).
-5. Aggiorna le date `<lastmod>` in `sitemap.xml` quando cambi i contenuti.
+4. Aggiorna le date `<lastmod>` in `sitemap.xml` quando cambi i contenuti.
 
 ---
 

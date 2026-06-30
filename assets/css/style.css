@@ -956,6 +956,13 @@ footer {
 
 #cookie-banner a { color: #c084fc; text-decoration: none; }
 
+.cookie-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
 .cookie-accept {
   padding: 10px 24px;
   background: linear-gradient(135deg, #7c3aed, #e63946);
@@ -967,6 +974,24 @@ footer {
   cursor: pointer;
   letter-spacing: 0.05em;
   flex-shrink: 0;
+}
+
+.cookie-reject {
+  padding: 10px 24px;
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(192,132,252,0.35);
+  border-radius: 4px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.cookie-reject:hover {
+  color: #fff;
+  border-color: rgba(192,132,252,0.7);
 }
 
 /* ═══ PRIVACY MODAL ═══ */
