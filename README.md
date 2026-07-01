@@ -17,17 +17,15 @@ php -S 127.0.0.1:8000
 
 ## Deploy
 
-Vedi **[DEPLOY.md](DEPLOY.md)** (VPS con CloudPanel: nginx + PHP-FPM, deploy via git, HTTPS Let's Encrypt).
+VPS con CloudPanel (nginx + PHP-FPM). Il rilascio avviene tramite la funzione
+**Deployment** di CloudPanel collegata a questo repo (branch `main`, git-based):
+CloudPanel aggiorna la document root a ogni push.
 
-## Google (indicizzazione, analytics, scheda locale)
+Le direttive nginx aggiuntive (security headers, blocco di `includes/`, download
+del CV) vanno incollate nel Vhost del sito da CloudPanel.
 
-Vedi **[GOOGLE.md](GOOGLE.md)**. Gli ID dei servizi si impostano in `includes/config.php`.
-GA4 è già predisposto con Consent Mode v2 e banner Accetto/Rifiuta: basta inserire il Measurement ID.
+## Google
 
-## Asset social
-
-`og-image.png` (anteprima social) si rigenera con:
-
-```bash
-php tools/generate-og.php
-```
+Gli ID dei servizi Google (GA4, Search Console) si impostano in
+`includes/config.php`. GA4 è predisposto con Consent Mode v2 e banner cookie;
+lasciando un ID vuoto il relativo servizio resta disattivato.
