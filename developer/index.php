@@ -20,11 +20,11 @@ $email_display = '<a href="mailto:' . $email . '">' . $email . '</a>';
 <meta name="theme-color" content="#0c0818">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/favicon.svg">
-<link rel="canonical" href="https://giovannimelfi.it/developer">
+<link rel="canonical" href="https://giovannimelfi.it/developer/">
 
 <!-- OPEN GRAPH -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://giovannimelfi.it/developer">
+<meta property="og:url" content="https://giovannimelfi.it/developer/">
 <meta property="og:title" content="Giovanni Melfi — Software Engineer">
 <meta property="og:description" content="Backend development, API design, DevOps. PHP Laravel, Java Spring Boot, Docker, PostgreSQL.">
 <meta property="og:image" content="https://giovannimelfi.it/og-image.png">
@@ -45,7 +45,7 @@ $email_display = '<a href="mailto:' . $email . '">' . $email . '</a>';
   "name": "Giovanni Melfi",
   "honorificPrefix": "Dott.",
   "jobTitle": "Software Engineer & IT Consultant",
-  "url": "https://giovannimelfi.it/developer",
+  "url": "https://giovannimelfi.it/developer/",
   "sameAs": [
     "https://www.linkedin.com/in/giovanni-melfi/",
     "https://instagram.com/dott_melfix",

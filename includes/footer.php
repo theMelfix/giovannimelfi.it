@@ -16,7 +16,7 @@
     <a href="#contact">Contatti</a>
     &nbsp;·&nbsp;
     <?php if ($is_client): ?>
-    <a href="/developer" class="footer-switch">Profilo tecnico →</a>
+    <a href="/developer/" class="footer-switch">Profilo tecnico →</a>
     <?php else: ?>
     <a href="/" class="footer-switch">← Versione clienti</a>
     <?php endif; ?>

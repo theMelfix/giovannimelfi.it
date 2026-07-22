@@ -3,7 +3,7 @@
 <div class="cursor-ring" id="cursorRing"></div>
 
 <nav id="nav">
-  <a href="<?= $is_client ? '/' : '/developer' ?>#hero" class="nav-logo">
+  <a href="<?= $is_client ? '/' : '/developer/' ?>#hero" class="nav-logo">
     <div class="nav-hex">
       <svg viewBox="0 0 36 36" fill="none">
         <defs>
@@ -25,7 +25,7 @@
     <li><a href="#services">Cosa faccio</a></li>
     <li><a href="#portfolio">Progetti</a></li>
     <li><a href="#contact">Contatti</a></li>
-    <li><a href="/developer" class="nav-switch">Profilo tecnico</a></li>
+    <li><a href="/developer/" class="nav-switch">Profilo tecnico</a></li>
     <?php else: ?>
     <li><a href="#about">Chi sono</a></li>
     <li><a href="#stack">Stack</a></li>
