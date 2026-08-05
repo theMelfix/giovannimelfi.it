@@ -90,19 +90,5 @@ function rejectCookies() { updateConsent('denied'); }
 // Riapre il banner per modificare/revocare il consenso
 function manageCookies(e) {
   if (e) e.preventDefault();
-  if (typeof closePrivacy === 'function') closePrivacy();
   showBanner();
 }
-
-// Privacy modal
-const modal = document.getElementById('privacy-modal');
-function showPrivacy(e) {
-  if (e) e.preventDefault();
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-}
-function closePrivacy() {
-  modal.style.display = 'none';
-  document.body.style.overflow = '';
-}
-modal.addEventListener('click', e => { if (e.target === modal) closePrivacy(); });

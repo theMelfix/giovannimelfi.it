@@ -33,6 +33,6 @@ $GSC_VERIFICATION = $GSC_VERIFICATION ?? '';
 <script async src="https://www.googletagmanager.com/gtag/js?id=<?= htmlspecialchars($GA4_ID) ?>"></script>
 <script>
   gtag('js', new Date());
-  gtag('config', '<?= htmlspecialchars($GA4_ID) ?>', { 'anonymize_ip': true });
+  gtag('config', '<?= htmlspecialchars($GA4_ID) ?>');
 </script>
 <?php endif; ?>
