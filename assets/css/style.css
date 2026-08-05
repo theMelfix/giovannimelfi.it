@@ -324,6 +324,7 @@ nav.scrolled { padding: 18px 60px; }
   letter-spacing: 0.08em;
   text-decoration: none;
   border-radius: 4px;
+  cursor: pointer;
   transition: opacity 0.2s, transform 0.2s;
 }
 
@@ -334,6 +335,7 @@ nav.scrolled { padding: 18px 60px; }
   align-items: center;
   gap: 10px;
   padding: 14px 32px;
+  background: transparent;
   border: 1px solid rgba(192,132,252,0.3);
   color: rgba(255,255,255,0.7);
   font-family: 'Outfit', sans-serif;
@@ -342,6 +344,7 @@ nav.scrolled { padding: 18px 60px; }
   letter-spacing: 0.08em;
   text-decoration: none;
   border-radius: 4px;
+  cursor: pointer;
   transition: border-color 0.2s, color 0.2s, transform 0.2s;
 }
 
